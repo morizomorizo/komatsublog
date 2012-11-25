@@ -1,0 +1,101 @@
+@charset "UTF-8";
+
+/* 
+ * Version: 1.0, 2010.11.1
+ */
+
+
+/*===================================================================
+	General setting
+===================================================================*/
+body,div,h1,h2,h3,h4,h5,h6,p,address,blockquote,pre,th,td,dl,dt,dd,ul,ol,li,form,fieldset,textarea,table{
+	margin:0;
+	padding:0;
+	font-size:100%;
+}
+
+html{
+	width:100%;
+	height:100%;
+	background-color:#D3D4D6;
+	overflow-y:scroll;
+}
+
+body{
+	width:100%;
+	height:100%;
+	min-height:100%;
+	color:#333;
+	font-size:small;
+	_font-size:x-small;	/*IE6*/
+	line-height:1.37;
+	text-align:center;
+	font-family:'MS PGothic',Verdana, Arial,'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro', Osaka, sans-serif;
+	word-break:normal;
+	word-wrap:break-word;
+}
+
+html>body{height:auto;}
+
+ul,
+ol{list-style:none;}
+
+table{border-collapse:collapse;line-height:1.37;}
+
+table caption,
+table th,
+table td{text-align:left;vertical-align:top;}
+
+hr{display:none;}
+
+img{border:0;}
+
+a:link{color:#3366CC;}
+a:visited{color:#996699; text-decoration:underline;}
+a:hover{color:#A9A9A9; text-decoration:none;}
+a:active{color:#3366CC; text-decoration:none;}
+
+em{font-weight:bold;font-style:normal;}
+
+input{line-height:normal;}
+
+address{font-style:normal;}
+
+pre{
+	white-space:-moz-pre-wrap; /* Mozilla */
+	white-space:-pre-wrap; /* Opera 4-6 */
+	white-space:-o-pre-wrap; /* Opera 7 */
+	white-space:pre-wrap; /* CSS3 */
+}
+
+
+/*--[class]-----------------------------------------------------*/
+
+.clearBoth{clear:both;}
+
+.caution{color:#CC0000 !important;}
+
+.noscriptMsg{
+min-height:14px;
+_height:14px;
+color:#CC0000;
+font-weight:bold;
+text-align:center;
+margin:0 10px 10px;
+zoom:1;
+}
+.noscriptMsg span {
+background:url(/images/icon_noscript.gif) no-repeat 0 50%;
+padding:3px 0 3px 20px;
+zoom:1;
+}
+
+.dispNone,
+.skipNav {text-indent:-9999px;position:absolute;overflow:hidden;}
+
+
+/* clearfix */
+.pkg{zoom:1;}
+.pkg:after{content:'';display:block;clear:both;}
+
+
