@@ -1,4 +1,10 @@
 Komatsublog::Application.routes.draw do
+  get "sessions/new"
+
+  get "sessions/create"
+
+  get "sessions/destroy"
+
   get "wanted/list"
 
   get "wanted/new_issue"
