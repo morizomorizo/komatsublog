@@ -1,4 +1,10 @@
 Komatsublog::Application.routes.draw do
+  get "wanted/list"
+
+  get "wanted/new_issue"
+
+  get "wanted/detail"
+
   resources :good_points
 
 
