@@ -1,4 +1,7 @@
 Komatsublog::Application.routes.draw do
+  resources :good_points
+
+
   resources :comments
 
 

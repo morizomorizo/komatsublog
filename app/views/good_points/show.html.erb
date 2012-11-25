@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Issue:</b>
+  <%= @good_point.issue_id %>
+</p>
+
+<p>
+  <b>User:</b>
+  <%= @good_point.user_id %>
+</p>
+
+<p>
+  <b>Count:</b>
+  <%= @good_point.count %>
+</p>
+
+
+<%= link_to 'Edit', edit_good_point_path(@good_point) %> |
+<%= link_to 'Back', good_points_path %>

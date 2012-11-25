@@ -1,0 +1,27 @@
+<h1>Listing good_points</h1>
+
+<table>
+  <tr>
+    <th>Issue</th>
+    <th>User</th>
+    <th>Count</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @good_points.each do |good_point| %>
+  <tr>
+    <td><%= good_point.issue_id %></td>
+    <td><%= good_point.user_id %></td>
+    <td><%= good_point.count %></td>
+    <td><%= link_to 'Show', good_point %></td>
+    <td><%= link_to 'Edit', edit_good_point_path(good_point) %></td>
+    <td><%= link_to 'Destroy', good_point, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Good point', new_good_point_path %>
