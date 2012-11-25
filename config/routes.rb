@@ -1,4 +1,7 @@
 Komatsublog::Application.routes.draw do
+  resources :issues
+
+
   resources :users
 
 
